@@ -1,12 +1,11 @@
-from tree import TreeNode
 import igraph as ig
 import matplotlib.pyplot as plt
 
-def drawTree(root: TreeNode):
+def drawTree(vertices, edges) -> None:
     
     g = ig.Graph(directed=True)
-    g.add_vertices(root.size())
-    g.add_edges(root.get_edges())
+    g.add_vertices(vertices)
+    g.add_edges(edges)
 
     layout = g.layout("rt")
     layout.mirror(1)
