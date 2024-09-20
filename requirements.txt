@@ -1,0 +1,2 @@
+pip install igraph
+pip install matplotlib
