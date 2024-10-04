@@ -1,6 +1,7 @@
 import igraph as ig
 import matplotlib.pyplot as plt
 
+#graphing funtion to draw tree
 def drawTree(vertices, edges) -> None:
     
     g = ig.Graph(directed=True)
